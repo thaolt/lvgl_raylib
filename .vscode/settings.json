@@ -1,6 +1,0 @@
-{
-    "files.associations": {
-        "lvgl.h": "c",
-        "lvgl_raylib_display.h": "c"
-    }
-}
