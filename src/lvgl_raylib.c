@@ -2,17 +2,16 @@
 #include <stdint.h>
 #include "lvgl_raylib.h"
 #include "lvgl_raylib_display.h"
+#include "lvgl_raylib_input.h"
 
 /* private prototypes */
 
 static uint32_t lvgl_raylib_tick_cb(void);
-void lvgl_raylib_display_render_default(void);
-void lvgl_raylib_input_create_default(void);
-void lvgl_raylib_input_process_default(void);
 
 /* static variables */
 
 static lvgl_raylib_display_t _default_display = {0};
+static lvgl_raylib_input_t _default_input = {0};
 
 /* PUBLIC IMPLEMENTATION */
 
@@ -21,10 +20,12 @@ void lvgl_raylib_init(int width, int height)
     lv_init();
     lv_tick_set_cb(&lvgl_raylib_tick_cb);
     lvgl_raylib_display_create(&_default_display, width, height);
+    lvgl_raylib_input_create(&_default_input);
 }
 
 void lvgl_raylib_process_events(void)
 {
+    lv_indev_read(_default_input.keyboard_indev);
     lv_task_handler();
 }
 
