@@ -2,7 +2,19 @@
 
 ## Project Overview
 
-`lvgl_raylib` is lightweight binding library designed to simplify desktop application development with minimal computational overhead. Unlike resource-intensive frameworks like Electron, this project delivers efficient and responsive graphical interfaces through a strategic combination of two powerful libraries `LVGL` and `Raylib`.
+`lvgl_raylib` is lightweight binding library designed to simplify desktop application development with minimal computational overhead. This project delivers efficient and responsive graphical interfaces through a strategic combination of two powerful libraries `LVGL` and `Raylib`.
+
+## The reasons for the project's existence
+
+In today's software landscape, complexity has become a silent burden. Electron-based applications epitomize this trend, where a simple todo list can inexplicably consume over 200MB of disk space—an inefficiency bordering on the absurd. In contrast, this project's example demonstrates a lean alternative, occupying just over 1MB when compiled with MinSizeRel and stripped.
+
+Raylib offers an elegant and powerful API, but it lacks a comprehensive UI widget library. While raygui exists, it appears to have been largely abandoned. This gap presented an opportunity for a more robust solution.
+
+Existing LVGL bindings for GLFW/OpenGLES/X11 were explored but found wanting. During testing, even a simple example would consistently consume 100% of a CPU core while remaining essentially idle—a performance characteristic that raised significant concerns. In stark contrast, combining LVGL with Raylib demonstrated remarkable efficiency, utilizing only 5-6% of a single CPU core while idle—a testament to the potential of a more optimized approach.
+
+Qt, while undeniably powerful and widely used, seems to be trending towards increased complexity with each version. While it remains an excellent framework, there's a growing need for lighter, more focused alternatives.
+
+These observations converged into a singular vision: creating a lightweight, efficient desktop application development approach that prioritizes performance, simplicity, and resource consciousness.
 
 ## Core Architecture
 
