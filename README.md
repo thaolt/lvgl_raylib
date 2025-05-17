@@ -10,23 +10,6 @@ The library leverages the strengths of:
 - **LVGL**: Provides a comprehensive widget system and UI management
 - **Raylib**: Offers hardware-accelerated rendering and streamlined input event processing
 
-## Key Advantages
-
-### Performance
-- Lightweight and efficient graphics rendering
-- Minimal system resource consumption
-- Hardware-accelerated graphics support
-
-### Development Experience
-- Intuitive and straightforward API
-- Cross-platform compatibility
-- Simplified UI component creation
-
-### Design Philosophy
-- Prioritize simplicity and developer productivity
-- Focus on core functionality and performance
-- Provide a lean alternative to heavyweight GUI frameworks
-
 ## Project Scope
 
 ### Objectives
