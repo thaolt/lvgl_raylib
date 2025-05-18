@@ -1,5 +1,7 @@
 #include <stdint.h>
 #include <stdbool.h>
+#include <stdlib.h>
+#include <string.h>
 #include "lvgl_raylib.h"
 #include "lvgl_raylib_display.h"
 
