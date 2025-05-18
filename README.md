@@ -48,7 +48,7 @@ sudo apt install cmake build-essential libegl1-mesa-dev
 
 1. Clone the repository:
 ```sh
-git clone https://github.com/thaolt/lvgl_raylib.git
+git clone --recursive https://github.com/thaolt/lvgl_raylib.git
 ```
 
 2. Build the example project:
@@ -64,7 +64,7 @@ cmake .. && make -j
 Create a new project by copying and modifying the example:
 
 ```sh
-git clone https://github.com/thaolt/lvgl_raylib.git myapp
+git clone --recursive https://github.com/thaolt/lvgl_raylib.git myapp
 cd myapp
 rm -r .git
 mv lvgl_raylib_example myapp
