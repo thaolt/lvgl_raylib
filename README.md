@@ -6,15 +6,15 @@
 
 ## The reasons for the project's existence
 
-In today's software landscape, complexity has become a silent burden. Electron-based applications epitomize this trend, where a simple todo list can inexplicably consume over 200MB of disk space—an inefficiency bordering on the absurd. In contrast, this project's example demonstrates a lean alternative, occupying just over 1MB when compiled with MinSizeRel and stripped.
+Modern software development is drowning in bloat. Electron apps turn a simple todo list into a 200MB monster—pure computational gluttony. Our project? A lean, mean 1MB alternative that laughs in the face of unnecessary complexity.
 
-Raylib offers an elegant and powerful API, but it lacks a comprehensive UI widget library. While raygui exists, it appears to have been largely abandoned. This gap presented an opportunity for a more robust solution.
+Raylib rocks a killer API, but was missing a robust UI toolkit. Raygui? Abandoned. We saw a gap and punched through it with a solution that doesn't compromise.
 
-Existing LVGL bindings for GLFW/OpenGLES/X11 were explored but found wanting. During testing, even a simple example would consistently consume 100% of a CPU core while remaining essentially idle—a performance characteristic that raised significant concerns. In stark contrast, combining LVGL with Raylib demonstrated remarkable efficiency, utilizing only 5-6% of a single CPU core while idle—a testament to the potential of a more optimized approach.
+We stress-tested existing LVGL bindings of GLFW/OpenGLES/X11 and found them pathetic: a "simple" example consuming 100% CPU while doing jack squat. Our LVGL+Raylib combo? A performance beast, idling at a mere 5-6% CPU utilization. That's not just optimization—that's engineering poetry.
 
-Qt, while undeniably powerful and widely used, seems to be trending towards increased complexity with each version. While it remains an excellent framework, there's a growing need for lighter, more focused alternatives.
+Qt's great, but it's becoming a Swiss Army knife when we need a precision scalpel. Each version adds more complexity, more overhead. We're building something different: focused, efficient, ruthlessly pragmatic.
 
-These observations converged into a singular vision: creating a lightweight, efficient desktop application development approach that prioritizes performance, simplicity, and resource consciousness.
+Bottom line: We're not just building a library. We're declaring war on software bloat, crafting a development approach that's lightning-fast, razor-sharp, and unapologetically lean.
 
 ## Core Architecture
 
