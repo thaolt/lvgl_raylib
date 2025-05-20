@@ -102,3 +102,9 @@ static void lvgl_raylib_keyboard_read(lv_indev_t * indev, lv_indev_data_t* data)
     data->state = LV_INDEV_STATE_RELEASED;
     data->continue_reading = false;
 }
+
+void lvgl_raylib_input_destroy(lvgl_raylib_input_t *input) {
+    lv_group_delete(input->group);
+    lv_indev_delete(input->mouse_indev);
+    lv_indev_delete(input->keyboard_indev);
+}

@@ -106,3 +106,11 @@ static void lvgl_raylib_display_flush_cb(lv_display_t * disp, const lv_area_t* a
     display->texture_updated = true;
     lv_display_flush_ready(disp);
 }
+
+void lvgl_raylib_display_destroy(lvgl_raylib_display_t * display) {
+    if (display->texture_created) {
+        UnloadTexture(display->raylib_texture);
+    }
+    UnloadImage(display->raylib_img);
+    lv_display_delete(display->disp);
+}

@@ -45,6 +45,8 @@ void lvgl_raylib_render(void)
 
 void lvgl_raylib_deinit()
 {
+    lvgl_raylib_display_destroy(&_default_display);
+    lvgl_raylib_input_destroy(&_default_input);
     lv_deinit();
 }
 

@@ -20,5 +20,6 @@ typedef struct {
 /* public functions */
 
 void lvgl_raylib_display_create(lvgl_raylib_display_t * display, int width, int height);
+void lvgl_raylib_display_destroy(lvgl_raylib_display_t * display);
 
 #endif

@@ -10,5 +10,6 @@ typedef struct {
 } lvgl_raylib_input_t;
 
 void lvgl_raylib_input_create(lvgl_raylib_input_t *input);
+void lvgl_raylib_input_destroy(lvgl_raylib_input_t *input);
 
 #endif
